@@ -10,15 +10,15 @@ namespace loginconsole
     //Login Attempts counter
     int loginAttempts = 0;
 
-            //Simple iteration upto three times
+            //Checking to login (Attempt upto 3 times otherwise not able to login)
             for (int i = 0; i < 3; i++)
             {
-                Console.WriteLine("Enter username");
+                Console.WriteLine("Please enter username");
                 string username = Console.ReadLine();
-                Console.WriteLine("Enter password");
+                Console.WriteLine("Please enter password");
                 string password = Console.ReadLine();
 
-                if (username != "001" || password != "ramku")
+                if (username != "001" || password != "jay")
                     loginAttempts++;
                 else
                     break;
@@ -26,9 +26,9 @@ namespace loginconsole
 
             //Display the result
             if (loginAttempts > 2)
-                Console.WriteLine("Login failure");
+                Console.WriteLine("You failed to login!!");
             else
-                Console.WriteLine("Login successful");
+                Console.WriteLine("You are successfully logged in!!");
 
             Console.ReadKey();
         }
