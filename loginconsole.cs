@@ -1,12 +1,12 @@
-﻿using System;
+using System;
 
 namespace loginconsole
 {
-    class Program
+    class loginconsole
     {
         static void Main(string[] args)
         {
-< code >
+
     //Login Attempts counter
     int loginAttempts = 0;
 
@@ -18,7 +18,7 @@ namespace loginconsole
                 Console.WriteLine("Enter password");
                 string password = Console.ReadLine();
 
-                if (username != "valid" || password != "valid")
+                if (username != "001" || password != "ramku")
                     loginAttempts++;
                 else
                     break;
@@ -31,6 +31,6 @@ namespace loginconsole
                 Console.WriteLine("Login successful");
 
             Console.ReadKey();
-</ code >        }
+        }
     }
 }
